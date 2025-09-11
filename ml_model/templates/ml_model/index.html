@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Restaurant Rating Predictor - Landing Page</title>
+    <style>
+        /* Basic Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f2f6f9;
+            color: #2c3e50;
+        }
+
+        /* Navbar styles */
+        nav {
+            background-color: #3498db;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f1c40f;
+        }
+
+        /* Hero section */
+        .hero {
+            max-width: 900px;
+            margin: 80px auto 40px;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: #34495e;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .btn {
+            background-color: #3498db;
+            color: white;
+            padding: 14px 36px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 80px;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#" class="logo">Restaurant Predictor</a>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="predict-form/">Predict Rating</a></li>
+            <!-- Add more links here -->
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to the Restaurant Aggregate Rating Predictor</h1>
+        <p>Use machine learning to estimate the aggregate rating of a restaurant based on key features. Try it out now!</p>
+        <a href="predict-form/" class="btn">Predict Now</a>
+    </section>
+
+    <footer>
+        &copy; 2025 Restaurant Predictor • Built with Django and Machine Learning
+    </footer>
+</body>
+
+</html>
